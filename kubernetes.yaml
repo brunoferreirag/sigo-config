@@ -31,10 +31,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: sigo-config-service
+  name: sigo-config
 spec:
-  ports:
-  - port: 8000
   selector:
     app: sigo-config
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
 ---
