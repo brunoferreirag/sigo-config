@@ -16,7 +16,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
       - name: sigo-config
-        image: sigotcc.azurecr.io/sigo-config:latest
+        image: docker.io/brunoferreirag/sigo-config:latest
         ports:
         - containerPort: 8000
           name: sigo-config
