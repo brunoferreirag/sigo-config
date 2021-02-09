@@ -1,10 +1,12 @@
 name: sigo-config
 image: docker.io/brunoferreirag/sigo-config:latest
-command: bash
-volumes:
-- /root/.m2
 sync:
-- .:/usr/src/app
+- .:/workspace/app/
+persistentVolume:
+  enabled: false
 forward:
-- 5005:5005
-- 8080:8080
+- 8000:8000
+resources:
+  limits:
+    cpu: "0.2"
+    memory: 0.25Gi
