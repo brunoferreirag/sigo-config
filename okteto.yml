@@ -1,0 +1,10 @@
+name: sigo-config
+image: docker.io/brunoferreirag/sigo-config:latest
+command: bash
+volumes:
+- /root/.m2
+sync:
+- .:/usr/src/app
+forward:
+- 5005:5005
+- 8080:8080
