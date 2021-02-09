@@ -31,7 +31,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: sigo-config
+  name: sigo-config-service
 spec:
   ports:
   - port: 8000
