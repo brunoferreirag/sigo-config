@@ -22,9 +22,11 @@ spec:
           name: sigo-config
         resources:
           requests:
-            cpu: 256m
+            memory: "128Mi"
+            cpu: "10m"
           limits:
-            cpu: 256m
+            memory: "256Mi"
+            cpu: "256m"
 ---
 apiVersion: v1
 kind: Service
