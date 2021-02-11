@@ -33,11 +33,11 @@ kind: Service
 metadata:
   name: sigo-config
 spec:
+  type: LoadBalancer 
+  ports:
+    - name: sigo-config
+      protocol: TCP
+      port: 8080
   selector:
     app: sigo-config
-  ports:
-    - protocol: HTTP
-      port: 8000
-      targetPort: 8000
-      name: tcp-8000
 ---
