@@ -1,11 +1,11 @@
-name: sigo-config
-image: okteto/maven
-command: ["mvn", "spring-boot:run" ]
-workdir: /
+name: logistica
+image: docker.io/brunoferreirag/logistica:latest
+sync:
+- .:/workspace/app/
 persistentVolume:
   enabled: false
 forward:
-- 8080:8080
+- 8000:8000
 resources:
   limits:
     cpu: "0.2"
