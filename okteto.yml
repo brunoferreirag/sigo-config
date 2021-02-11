@@ -1,11 +1,11 @@
 name: sigo-config
-image: docker.io/brunoferreirag/sigo-config:latest
-sync:
-- .:/workspace/app/
+image: okteto/maven
+command: ["mvn", "spring-boot:run" ]
+workdir: /workspace/app
 persistentVolume:
   enabled: false
 forward:
-- 8000:8000
+- 8080:8080
 resources:
   limits:
     cpu: "0.2"
