@@ -1,5 +1,5 @@
-name: logistica
-image: docker.io/brunoferreirag/logistica:latest
+name: sigo-config
+image: docker.io/brunoferreirag/sigo-config:latest
 sync:
 - .:/workspace/app/
 persistentVolume:
