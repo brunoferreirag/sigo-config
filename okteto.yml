@@ -1,7 +1,7 @@
 name: sigo-config
 image: okteto/maven
 command: ["mvn", "spring-boot:run" ]
-workdir: /workspace/app
+workdir: /
 persistentVolume:
   enabled: false
 forward:
