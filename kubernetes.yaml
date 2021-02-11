@@ -37,7 +37,7 @@ spec:
   ports:
     - name: sigo-config
       protocol: TCP
-      port: 8080
+      port: 8000
   selector:
     app: sigo-config
 ---
