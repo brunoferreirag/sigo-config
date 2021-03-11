@@ -15,7 +15,7 @@
 	<description>Micro Serviço de Configuração</description>
 
 	<properties>
-		<java.version>13</java.version>
+		<java.version>15</java.version>
 		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
 	</properties>
 
